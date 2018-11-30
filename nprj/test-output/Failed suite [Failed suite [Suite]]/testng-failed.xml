@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Failed suite [Suite]]]" parallel="tests">
+  <listeners>
+    <listener class-name="capscreen.TestNGListerner"/>
+  </listeners>
+  <test name="Test(failed)(failed)(failed)" parallel="tests">
+    <groups>
+      <run>
+        <include name="login"/>
+        <exclude name="broken"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="capscreen.fbscreen">
+        <methods>
+          <include name="capfb"/>
+        </methods>
+      </class> <!-- capscreen.fbscreen -->
+    </classes>
+  </test> <!-- Test(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Suite]]] -->
